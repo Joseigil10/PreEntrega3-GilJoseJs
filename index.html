@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Ropa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+</head>
+
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+  <h1>Inventario</h1>
+
+  <!-- Ingreso de productos -->
+  <div id="product-form">
+    <h2>Registrar Producto</h2>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+    <label for="talla">Talla:</label>
+    <input type="text" id="talla" required>
+    <label for="color">Color:</label>
+    <input type="text" id="color" required>
+    <label for="stock">Cantidad:</label>
+    <input type="number" id="stock" required>
+    <label for="marca">Marca:</label>
+    <input type="text" id="marca" required>
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" required>
+    <button id="add-product" type="button" class="btn btn-outline-success">Agregar Producto</button>
+  </div>
+
+  <!-- Form para buscar el producto por su nombre -->
+  <div id="search-form">
+    <h2>Buscar Producto</h2>
+    <label for="search-nombre">Nombre del Producto:</label>
+    <input type="text" id="search-nombre" required>
+    <button id="search-product" type="button" class="btn btn-outline-success">Buscar</button>
+  </div>
+
+  <!-- Resultado de la busqueda -->
+  <div id="search-results">
+    <h2>Resultado de Búsqueda:</h2>
+    <p id="product-info"></p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+
+  <footer  class="bg-dark text-white pt-5 pb-4 font-size: 12px;">
+    <div class="container text-center text-md-left">
+
+        <div class="row text-center text-md-left">
+
+            <div class=" col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 footer-column">
+                <h5 class="text-uppercase mb-4 font-weight-hold text-warning ">Company Name</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed accusamus, quibusdam commodi quod earum minus vitae tenetur perspiciatis distinctio iure accusantium amet numquam repellat odio optio tempore omnis similique dolorem.</p>
+
+
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 footer-column">
+                <h5 class="text-uppercase mb-4 font-weight-hold text-warning">Products</h5>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">The Providers</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Creativity</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Sources</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Likes</a>
+                </p>
+
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 footer-column">
+                <h5 class="text-uppercase mb-4 font-weight-hold text-warning">Usefull links</h5>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Your Account</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Become an affiliate</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Shipping</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Help</a>
+                </p>
+
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 footer-column">
+                <h5 class="text-uppercase mb-4 font-weight-hold text-warning">Contacts</h5>
+                <p>
+                    <i class="fas fa-home mr-3"></i> New York
+                </p>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i>  @gmail.com
+                </p>
+
+                <p>
+                    <i class="fas fa-phone mr-3"></i> +56xxxxxx
+                </p>
+
+                <p>
+                    <i class="fas fa-print mr-3"></i> (xxxx)
+                </p>
+
+
+            </div>
+        </div>
+        <hr class="mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8">
+                <p>Copyright 2023 All rights reserved by:
+                    <a href="#"style="text-decoration: none;">
+                        <strong class="text-warning">Jose Gil</strong>
+                    </a>
+                </p>
+
+            </div>
+            <div class="col-md-5 col-lg-4 col-xl-2">
+                <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-line-item">
+                            <a href="#" class="btn-floating btn-sm text-blue" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+
+                        </li>
+                        <li class="list-line-item">
+                            <a href="#" class="btn-floating btn-sm text-blue" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+
+                        </li>
+                        <li class="list-line-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google-plus"></i></a>
+
+                        </li>
+                        <li class="list-line-item">
+                            <a href="#" class="btn-floating btn-sm text-blue" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+
+                        </li>
+                        <li class="list-line-item">
+                            <a href="#" class="btn-floating btn-sm text-danger" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+  </footer>
+</body>
+</html>
